@@ -15,7 +15,7 @@ if __name__ == '__main__' :
 
     # cursor.execute("""CREATE TABLE logs (
     #     cur_time text
-    # );""")
+    # );""") fdsafasdfsadfsdasdfsadfasfsfdsfsadf
 
 
     cursor.execute("insert into logs values (%s)"%str( round(time.time()) ) )
