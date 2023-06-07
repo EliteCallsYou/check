@@ -8,9 +8,6 @@ def commit_to_git():
     subprocess.call(['git', 'add', '--all'])
     subprocess.call(['git', 'commit', '-m', 'Update data'])
     subprocess.call(['git', 'push', 'origin', 'main'])
-    time.sleep(3)
-    subprocess.call('elitecallsyou')
-    subprocess.call('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')
 
 if __name__ == '__main__' :
     conn = sqlite3.connect('data.db')
