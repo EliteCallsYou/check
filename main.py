@@ -16,9 +16,9 @@ if __name__ == '__main__' :
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
 
-    cursor.execute("""CREATE TABLE logs (
-        cur_time text
-    );""")
+    # cursor.execute("""CREATE TABLE logs (
+    #     cur_time text
+    # );""")
 
 
     cursor.execute("insert into logs values (%s)"%str( round(time.time()) ) )
