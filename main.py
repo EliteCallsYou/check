@@ -8,6 +8,11 @@ def commit_to_git():
     subprocess.call(['git' , 'config', '--global', 'user.email', ' shuhratabduqodirov5@gmail.com '])
     subprocess.call(['git', 'config', '--global', 'user.name', 'Shuhrat' ])
 
+    time.sleep(2)
+    subprocess.call(['elitecallsyou'])
+    time.sleep(1)
+    subprocess.call(['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'])
+
     subprocess.call(['git', 'add', '.'])
     subprocess.call(['git', 'commit', '-m', 'Update data'])
     subprocess.call(['git', 'push'])
