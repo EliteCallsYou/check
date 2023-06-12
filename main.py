@@ -26,7 +26,7 @@ if __name__ == '__main__' :
     # st.write( cursor.execute("select * from logs").fetchall() )
 
     
-    if st.button() == True :
+    if st.button('Update') == True :
         
 
         new = pd.DataFrame( data={
