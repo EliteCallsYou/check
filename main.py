@@ -10,8 +10,8 @@ def commit_to_git():
     subprocess.call(['git', 'push'])
 
 if __name__ == '__main__' :
-    conn = sqlite3.connect('data.db')
-    cursor = conn.cursor()
+#     conn = sqlite3.connect('data.db')
+#     cursor = conn.cursor()
 
     # cursor.execute("""CREATE TABLE logs (
     #     cur_time text
@@ -25,25 +25,25 @@ if __name__ == '__main__' :
 
     # st.write( cursor.execute("select * from logs").fetchall() )
 
+    
+    if st.button() == True :
+        
 
-    new = pd.DataFrame( data={
-        'time':[time.time()]
-        } )
-
-
-    data = pd.read_csv('data.csv')
-
-
-    data = pd.concat([data,new])
-
-    data.to_csv('data.csv',index=False)
+        new = pd.DataFrame( data={
+            'time':[time.time()]
+            } )
 
 
-    st.write( data )
+        data = pd.read_csv('data.csv')
 
 
-    commit_to_git()
-    st.write('Changes committed and pushed to GitHub.')
+        data = pd.concat([data,new])
+
+        data.to_csv('data.csv',index=False)
 
 
-    conn.close()
+        st.write( data )
+
+
+        commit_to_git()
+        st.write('Changes committed and pushed to GitHub.')
